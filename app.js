@@ -8,21 +8,25 @@ const port = 3000
 //menerima request dari client
 app.get('/', (req, res) => {
     //root __dirname untuk menjalankan programnya bisa diluar folder tersebut
+    //mengirimkan file index ke browser
     res.sendFile('index.html',{root:__dirname})
 })
 
 // menerima request about
 app.get('/about', (req, res) => {
+    //mengirimkan file about ke browser
     res.sendFile('about.html',{root:__dirname})
 
 })
 //menerima request contact
 app.get('/contact', (req, res) => {
-    res.send('this is contact page')
+    //mengirimkan file contact ke browser
+    res.sendFile('conntact.html',{root:__dirname})
 })
 
 //memakai parameter, dan query
 app.get('/product/:id', (req, res) => {
+    // mengirimkan ke browser
     res.send(`Product id : ${req.params.id} <br><br>Product name : ${req.query.nama}`)
 })
 
