@@ -11,12 +11,12 @@ app.get('/', (req, res) => {
     res.sendFile('index.html',{root:__dirname})
 })
 
-
+// menerima request about
 app.get('/about', (req, res) => {
     res.sendFile('about.html',{root:__dirname})
 
 })
-//menerima request 
+//menerima request contact
 app.get('/contact', (req, res) => {
     res.send('this is contact page')
 })
