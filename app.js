@@ -21,7 +21,7 @@ app.get('/about', (req, res) => {
 //menerima request contact
 app.get('/contact', (req, res) => {
     //mengirimkan file contact ke browser
-    res.sendFile('conntact.html',{root:__dirname})
+    res.sendFile('contact.html',{root:__dirname})
 })
 
 //memakai parameter, dan query
